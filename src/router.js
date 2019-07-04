@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -23,3 +23,14 @@ export default new Router({
     }
   ]
 })
+
+/* PageNotFound redirection */
+router.beforeEach((to, from, next) => {
+  if (!to.matched.length) {
+    next('/')
+  } else {
+    next()
+  }
+})
+
+export default router
