@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-cloak>
     <header role="banner">
-      <Banner Title="Le Déradicaliseur"/>
+      <Banner :Title='AppTitle'/>
       <NavBar/>
     </header>
     <router-view/>
@@ -25,6 +25,7 @@ export default {
   },
   data () {
     return {
+      AppTitle: 'Le Déradicaliseur'
     }
   }
 }
