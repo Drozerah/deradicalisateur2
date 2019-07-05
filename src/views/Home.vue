@@ -1,17 +1,13 @@
 <template>
   <div class="home">
-    <Title msg="Le Déradicaliseur"/>
+    <h2>This is the home page</h2>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Title from '@/components/Title.vue'
 
 export default {
-  name: 'home',
-  components: {
-    Title
-  }
+
 }
 </script>
