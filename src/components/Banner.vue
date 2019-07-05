@@ -1,11 +1,11 @@
 <template>
-  <div class="AppTitle">
+  <div class="banner">
     <h1
       class="center"
       v-show='displayLogo'
     ><img
       class="responsive-img"
-      :alt="AppTitle"
+      :alt="Title"
       src="@/assets/jpg/bandeau.jpg">
     </h1>
   </div>
@@ -13,9 +13,9 @@
 
 <script>
 export default {
-  name: 'AppTitle',
+  name: 'Banner',
   props: {
-    AppTitle: String
+    Title: String
   },
   data () {
     return {

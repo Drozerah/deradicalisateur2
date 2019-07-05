@@ -1,24 +1,27 @@
 <template>
   <div id="app" v-cloak>
     <header role="banner">
-      <AppTitle AppTitle="Le Déradicaliseur"/>
+      <Banner Title="Le Déradicaliseur"/>
       <NavBar/>
     </header>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import AppTitle from '@/components/AppTitle.vue'
+import Banner from '@/components/Banner.vue'
 import NavBar from '@/components/navigation/NavBar.vue'
+import Footer from '@/components/Footer.vue'
 import 'materialize-css'
 
 export default {
   name: 'app',
   components: {
-    AppTitle,
-    NavBar
+    Banner,
+    NavBar,
+    Footer
   },
   data () {
     return {
