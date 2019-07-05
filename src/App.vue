@@ -1,11 +1,11 @@
 <template>
   <div id="app" v-cloak>
     <header role="banner">
-      <Banner :Title='AppTitle'/>
+      <Banner :Title='AppTitle' :DisplayLogo='IsLogo'/>
       <NavBar/>
     </header>
     <router-view/>
-    <Footer/>
+    <Footer :Title='AppTitle' :DisplayLogo='!IsLogo'/>
   </div>
 </template>
 
@@ -25,7 +25,22 @@ export default {
   },
   data () {
     return {
-      AppTitle: 'Le Déradicaliseur'
+      AppTitle: 'Le Déradicaliseur',
+      IsLogo: undefined
+    }
+  },
+  methods: {
+    logoState () {
+      const currentPath = this.$router.currentRoute.path
+      currentPath === '/' ? this.IsLogo = true : this.IsLogo = false
+    }
+  },
+  mounted () {
+    this.logoState()
+  },
+  watch: {
+    '$route' () {
+      this.logoState()
     }
   }
 }

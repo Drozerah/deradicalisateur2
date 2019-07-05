@@ -2,7 +2,7 @@
   <div class="banner">
     <h1
       class="center"
-      v-show='displayLogo'
+      v-show='DisplayLogo'
     ><img
       class="responsive-img"
       :alt="Title"
@@ -15,22 +15,8 @@
 export default {
   name: 'Banner',
   props: {
-    Title: String
-  },
-  data () {
-    return {
-      displayLogo: true // conditional banner logo rendering
-    }
-  },
-  methods: {
-    isDisplayLogo () {
-      this.$router.currentRoute.path === '/' ? this.displayLogo = true : this.displayLogo = false
-    }
-  },
-  watch: { // watch for route to change
-    '$route' () {
-      this.isDisplayLogo() // function call
-    }
+    Title: String,
+    DisplayLogo: Boolean
   }
 }
 </script>
