@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-cloak>
-    <header>
-      <Title msg="Le Déradicaliseur"/>
+    <header role="banner">
+      <AppTitle AppTitle="Le Déradicaliseur"/>
       <NavBar/>
     </header>
     <router-view/>
@@ -10,14 +10,14 @@
 
 <script>
 // @ is an alias to /src
-import Title from '@/components/Title.vue'
+import AppTitle from '@/components/AppTitle.vue'
 import NavBar from '@/components/navigation/NavBar.vue'
 import 'materialize-css'
 
 export default {
   name: 'app',
   components: {
-    Title,
+    AppTitle,
     NavBar
   },
   data () {
