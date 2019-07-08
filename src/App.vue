@@ -64,4 +64,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+h2{
+  text-align: center;
+}
 </style>
