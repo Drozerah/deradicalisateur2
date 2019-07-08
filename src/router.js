@@ -11,11 +11,19 @@ const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        requiresAuth: false,
+        isPublicLink: true
+      }
     },
     {
       path: '/about',
       name: 'about',
+      meta: {
+        requiresAuth: false,
+        isPublicLink: true
+      },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
