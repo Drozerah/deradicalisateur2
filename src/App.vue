@@ -53,6 +53,9 @@ export default {
 [v-cloak] {
     display: none
 }
+body {
+  padding: 0px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
