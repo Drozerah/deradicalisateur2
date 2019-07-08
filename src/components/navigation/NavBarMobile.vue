@@ -39,6 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/_variables.scss";
 nav {
   ul{
     li{
@@ -49,6 +50,6 @@ nav {
   }
 }
 .bg-yellow  {
-    background-color: #fbea13!important;
+    background-color:$primary;
 }
 </style>
