@@ -31,8 +31,7 @@ export default {
   },
   mounted () {
     // Sidenav instanciation + config position
-    // eslint-disable-next-line
-    new M.Sidenav(this.$refs.sidenav, {
+    return new M.Sidenav(this.$refs.sidenav, {
       edge: 'left'
     })
   }
