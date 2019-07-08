@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Histoire from './views/Histoire.vue'
+import Extraits from './views/Extraits.vue'
+import Entrevue from './views/Entrevue.vue'
 
 Vue.use(Router)
 
@@ -18,16 +21,31 @@ const router = new Router({
       }
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/histoire',
+      name: 'histoire',
+      component: Histoire,
       meta: {
         requiresAuth: false,
         isPublicLink: true
-      },
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      }
+    },
+    {
+      path: '/extraits',
+      name: 'extraits',
+      component: Extraits,
+      meta: {
+        requiresAuth: false,
+        isPublicLink: true
+      }
+    },
+    {
+      path: '/entrevue',
+      name: 'entrevue',
+      component: Entrevue,
+      meta: {
+        requiresAuth: false,
+        isPublicLink: true
+      }
     }
   ],
   // scroll to top @{doc} /> https://router.vuejs.org/guide/advanced/scroll-behavior.html
