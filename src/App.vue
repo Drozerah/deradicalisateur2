@@ -1,6 +1,7 @@
 <template>
   <div id="app" v-cloak>
     <header role="banner">
+      <NavBarMobile/>
       <Banner :Title='AppTitle' :DisplayLogo='IsLogo'/>
       <NavBar/>
     </header>
@@ -13,14 +14,16 @@
 // @ is an alias to /src
 import Banner from '@/components/Banner.vue'
 import NavBar from '@/components/navigation/NavBar.vue'
+import NavBarMobile from '@/components/navigation/NavBarMobile.vue'
 import Footer from '@/components/Footer.vue'
-import 'materialize-css'
+// import 'materialize-css'
 
 export default {
   name: 'app',
   components: {
     Banner,
     NavBar,
+    NavBarMobile,
     Footer
   },
   data () {

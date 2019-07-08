@@ -1,5 +1,5 @@
 <template>
-  <nav class="white flex-container" role="navigation">
+  <nav class="white flex-container hide-on-small-only" role="navigation">
     <div class="nav-wrapper">
       <ul>
         <router-link
