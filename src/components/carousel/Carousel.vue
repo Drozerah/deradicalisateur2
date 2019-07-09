@@ -65,8 +65,6 @@ export default {
     }
   },
   mounted () {
-    // listen keydown event
-    document.addEventListener('keydown', this.getKeyCode)
     // Instanciate Carousel
     const Carousel = new M.Carousel(this.$refs.carousel, this.config.options)
     // Start auto cycle (config)
@@ -78,9 +76,12 @@ export default {
         Carousel.set(0)
       }, 1500)
     }
+    this.$nextTick(() => {
+      // add keydown event listener
+      window.addEventListener('keydown', this.getKeyCode)
+    })
   },
   computed: {
-
     CarouselInstance () { // Get Carousel Instance
       return M.Carousel.getInstance(this.$refs.carousel)
     }
@@ -141,6 +142,9 @@ export default {
 }
 /* Carousel item */
 .carousel-item{
+  img{
+    max-width: 100%;
+  }
   p {
       color:#333;
       text-align: center;
