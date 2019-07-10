@@ -110,6 +110,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/_variables.scss";
 .carousel-wrapper{
   display: flex;
   flex-direction: row;
@@ -135,22 +136,43 @@ export default {
   }
 }
 .carousel{
-  cursor: pointer;
-  /* DEV Carousel size */
-  height: 850px !important;
-  width: 567px !important;
-}
-/* Carousel item */
-.carousel-item{
-  img{
-    max-width: 100%;
-  }
-  p {
+  cursor: move;
+  .carousel-item{
+    img::selection{
+        background: transparent;
+    }
+    p{
       color:#333;
       text-align: center;
       margin: 0px;
+    }
   }
 }
+/* MOBILE */
+.mobile{
+  .carousel{
+    height: $carousel-mobile-height;
+    min-width: $carousel-mobile-width;
+    width: $carousel-mobile-width;
+    max-width: $carousel-mobile-width;
+  }
+}
+/* TABLET - LAPTOP - DESKTOP */
+.tablet, .laptop, .desktop{
+  .carousel{
+    height: $carousel-tablet-and-up-height;
+    min-width: $carousel-tablet-and-up-width;
+    width: $carousel-tablet-and-up-width;
+    max-width: $carousel-tablet-and-up-width;
+    .carousel-item{
+      p{
+        position: relative;
+        bottom: 5px;
+      }
+    }
+  }
+}
+
 </style>
 
 <style lang="scss">
