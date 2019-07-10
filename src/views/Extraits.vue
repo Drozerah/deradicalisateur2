@@ -1,11 +1,11 @@
 <template>
-  <div class="extraits">
+  <main class="main extraits">
     <h2>This is the 'extraits' page</h2>
     <Carousel/>
     <mq-layout mq="tablet+">
       <Modal/>
     </mq-layout>
-  </div>
+  </main>
 </template>
 
 <script>
