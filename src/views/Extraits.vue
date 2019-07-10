@@ -2,7 +2,9 @@
   <div class="extraits">
     <h2>This is the 'extraits' page</h2>
     <Carousel/>
-    <Modal/>
+    <mq-layout mq="tablet+">
+      <Modal/>
+    </mq-layout>
   </div>
 </template>
 
