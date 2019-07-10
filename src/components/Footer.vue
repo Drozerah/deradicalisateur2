@@ -1,5 +1,6 @@
 <template>
   <footer class='footer'>
+    <div class="center debug" style="color:orange;">Current device: {{$mq}}</div>
     <div class="center">
       <img class="responsive-img" :alt="Title" src="@/assets/jpg/bandeau.jpg" v-if='DisplayLogo'>
     </div>
