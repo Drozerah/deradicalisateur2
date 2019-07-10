@@ -9,11 +9,7 @@
         <NavBar/>
       </mq-layout>
     </header>
-    <main class="main">
-      <br>
-      <div class="center">current device: {{$mq}}</div>
-      <router-view />
-    </main>
+    <router-view/>
     <Footer :Title='AppTitle' :DisplayLogo='!IsLogo'/>
   </div>
 </template>
