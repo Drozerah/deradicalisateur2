@@ -1,5 +1,5 @@
 <template>
-  <nav class="white flex-container" role="navigation">
+  <nav class="white" role="navigation">
     <div class="nav-wrapper">
       <ul>
         <router-link
@@ -32,6 +32,8 @@ export default {
 
 <style lang="scss" scoped>
 nav {
+  display: flex;
+  justify-content: center;
   ul{
     li{
       a{
