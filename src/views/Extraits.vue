@@ -1,7 +1,9 @@
 <template>
   <main class="main extraits">
-    <h2>This is the 'extraits' page</h2>
+    <br>
+    <br>
     <Carousel/>
+    <Article/>
     <mq-layout mq="tablet+">
       <Modal/>
     </mq-layout>
@@ -11,10 +13,12 @@
 <script>
 // @ is an alias to /src
 import Carousel from '@/components/carousel/Carousel.vue'
+import Article from '@/components/articles/ExtraitsArticles.vue'
 import Modal from '@/components/modals/Modal.vue'
 export default {
   components: {
     Carousel,
+    Article,
     Modal
   }
 }
