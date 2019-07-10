@@ -69,4 +69,7 @@ body {
 h2{
   text-align: center;
 }
+.bold{
+  font-weight: 700;
+}
 </style>
