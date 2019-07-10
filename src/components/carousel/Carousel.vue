@@ -2,7 +2,7 @@
 <aside class="carousel-wrapper" :class="$mq">
   <!-- btn left -->
   <div class="nav-btn" @click="prevItem" v-show="$mq !== 'mobile'">
-      <i class="material-icons md-45">keyboard_arrow_left</i>
+    <i class="material-icons md-45">keyboard_arrow_left</i>
   </div>
   <!-- carousel slider -->
   <div class="carousel carousel-slider z-depth-2" ref="carousel">
@@ -15,7 +15,7 @@
   </div>
   <!-- btn right -->
   <div class="nav-btn" @click="nextItem" v-show="$mq !== 'mobile'">
-      <i class="material-icons md-45">keyboard_arrow_right</i>
+    <i class="material-icons md-45">keyboard_arrow_right</i>
   </div>
 </aside>
 </template>
@@ -172,12 +172,11 @@ export default {
     }
   }
 }
-
 </style>
 
 <style lang="scss">
 @import "@/styles/_variables.scss";
-/* Carousel navigation */
+/* Carousel indicators */
 .carousel{
   ul{
     li.indicator-item{
