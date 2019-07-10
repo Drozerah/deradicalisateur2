@@ -116,6 +116,8 @@ export default {
   flex-direction: row;
   .nav-btn{
     align-self: center;
+    height: 45px;
+    width: 45px;
     cursor: pointer;
     i{
       opacity :0.5;
