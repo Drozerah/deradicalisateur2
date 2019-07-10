@@ -1,11 +1,19 @@
 <template>
   <div id="app" v-cloak>
     <header role="banner">
-      <NavBarMobile/>
+      <mq-layout mq="mobile">
+        <NavBarMobile/>
+      </mq-layout>
       <Banner :Title='AppTitle' :DisplayLogo='IsLogo'/>
-      <NavBar/>
+      <mq-layout mq="tablet+">
+        <NavBar/>
+      </mq-layout>
     </header>
-    <router-view/>
+    <main class="main">
+      <br>
+      <div class="center">current device: {{$mq}}</div>
+      <router-view />
+    </main>
     <Footer :Title='AppTitle' :DisplayLogo='!IsLogo'/>
   </div>
 </template>
