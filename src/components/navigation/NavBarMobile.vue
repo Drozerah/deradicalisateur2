@@ -1,22 +1,22 @@
 <template>
-      <!-- Mobile device sidenav conditional rendering -->
-      <nav class="bg-yellow hide-on-med-and-up" role="navigation">
-        <div class="nav-wrapper ">
-          <ul id="nav-mobile" class="sidenav" ref="sidenav">
-            <router-link
-              v-for='link in links'
-              :key='link.path'
-              :to='link.path'
-              :exact='link.path == "/" ? true : false'
-              tag="li"
-              active-class="active"
-              >
-              <a :class="wavesEffect">{{link.path == "/" ? pathHomeName : link.name | capitalize}}</a>
-            </router-link>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
+  <!-- Mobile device sidenav conditional rendering -->
+  <nav class="bg-yellow hide-on-med-and-up" role="navigation">
+    <div class="nav-wrapper ">
+      <ul id="nav-mobile" class="sidenav" ref="sidenav">
+        <router-link
+          v-for='link in links'
+          :key='link.path'
+          :to='link.path'
+          :exact='link.path == "/" ? true : false'
+          tag="li"
+          active-class="active"
+          >
+          <a :class="wavesEffect">{{link.path == "/" ? pathHomeName : link.name | capitalize}}</a>
+        </router-link>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 </template>
 
 <script>
