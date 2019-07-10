@@ -114,7 +114,6 @@ export default {
 .carousel-wrapper{
   display: flex;
   flex-direction: row;
-  justify-content: center; /* DEV Carousel Centering */
   .nav-btn{
     align-self: center;
     cursor: pointer;
@@ -165,9 +164,12 @@ export default {
     width: $carousel-tablet-and-up-width;
     max-width: $carousel-tablet-and-up-width;
     .carousel-item{
+      img{
+        min-height: 768px
+      }
       p{
         position: relative;
-        bottom: 5px;
+        bottom: -3px;
       }
     }
   }
