@@ -11,7 +11,7 @@
 <script>
 // @ is an alias to /src
 import Carousel from '@/components/carousel/Carousel.vue'
-import Article from '@/components/articles/ExtraitsArticles.vue'
+import Article from '@/components/articles/ExtraitsArticle.vue'
 import Modal from '@/components/modals/Modal.vue'
 export default {
   components: {
