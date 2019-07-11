@@ -1,13 +1,15 @@
 <template>
-  <div class="home">
-    <h2>This is the home page</h2>
-  </div>
+  <main class="main extraits">
+    <Article/>
+  </main>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import Article from '@/components/articles/HomeArticle.vue'
 export default {
-
+  components: {
+    Article
+  }
 }
 </script>
