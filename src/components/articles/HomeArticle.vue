@@ -29,7 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/_variables.scss";
   article{
     margin: 100px 0px 90px 0px;
     header{
