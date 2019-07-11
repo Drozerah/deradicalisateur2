@@ -20,8 +20,54 @@
       </b>
       <p>voir aussi:</p>
       <div class="center">
-        <router-link to="entrevue" class="btn waves-effect waves-yellow grey lighten-1 black-text darken-text-2">Interview présentation de l'ouvrage</router-link>
+        <router-link to="entrevue" class="btn waves-effect waves-yellow grey lighten-1 black-text darken-text-2">
+          <span>Interview présentation</span>
+          <span v-if="$mq !=='mobile'"> de l'ouvrage</span>
+        </router-link>
       </div>
     </div>
   </article>
 </template>
+<style lang="scss" scoped>
+@import "@/styles/_variables.scss";
+  /* MOBILE */
+  article.mobile{
+    // background-color: rgb(0, 255, 42);
+    padding: 40px 0px 0px 0px;
+    min-width: $extraits-article-mobile-width;
+    width: $extraits-article-mobile-width;
+    max-width: $extraits-article-mobile-width;
+    header{
+      h1{
+        margin: 0px;
+        color:gray;
+        font-size: 23px;
+      }
+    }
+  }
+  /* TABLET - LAPTOP - DESKTOP */
+  article.tablet, article.laptop, article.desktop{
+    // background-color: #E7E7E7;
+    margin-top: 10px;
+    padding: 40px 45px 0px 45px;
+    min-width: $extraits-article-tablet-and-up-width;
+    width: $extraits-article-tablet-and-up-width;
+    max-width: $extraits-article-tablet-and-up-width;
+    // text-align: justify;
+    header{
+      h1{
+        margin: 0px 0px 40px 0px;
+        color:gray;
+        font-size: 23px;
+      }
+    }
+  }
+  /* MOBILE - TABLET - LAPTOP */
+  article.mobile, article.tablet, article.laptop{
+    .text-content{
+      .btn{
+        margin-top: 20px;
+      }
+    }
+  }
+</style>
