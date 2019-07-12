@@ -8,10 +8,7 @@
         <img :src="src" :alt="imgAlt" class="responsive-img">
       </div>
       <div class="text-content">
-        <p>Lui,<br>
-il va au coeur des mécaniques <br>
-et qu'importe si certains rouages <br>
-n'aiment pas être exposés...</p>
+        <p>Lui,<br>il va au coeur des mécaniques<br>et qu'importe si certains rouages<br>n'aiment pas être exposés...</p>
       </div>
     </div>
   </article>
@@ -30,7 +27,6 @@ export default {
 
 <style lang="scss" scoped>
   article{
-    margin: 100px 0px 90px 0px;
     header{
       h1{
         display: none;
