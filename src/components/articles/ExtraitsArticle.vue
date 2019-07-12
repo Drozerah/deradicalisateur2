@@ -30,13 +30,11 @@
 </template>
 <style lang="scss" scoped>
 @import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
   /* MOBILE */
   article.mobile{
-    // background-color: rgb(0, 255, 42);
     padding: 40px 0px 0px 0px;
-    min-width: $extraits-article-mobile-width;
-    width: $extraits-article-mobile-width;
-    max-width: $extraits-article-mobile-width;
+    @include article-mobile-width; // mixin
     header{
       h1{
         margin: 0px;
@@ -47,12 +45,9 @@
   }
   /* TABLET - LAPTOP - DESKTOP */
   article.tablet, article.laptop, article.desktop{
-    // background-color: #E7E7E7;
     margin-top: 10px;
     padding: 40px 45px 0px 45px;
-    min-width: $extraits-article-tablet-and-up-width;
-    width: $extraits-article-tablet-and-up-width;
-    max-width: $extraits-article-tablet-and-up-width;
+    @include article-tablet-and-up-width; // mixin
     // text-align: justify;
     header{
       h1{
