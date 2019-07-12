@@ -111,6 +111,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
 .carousel-wrapper{
   display: flex;
   flex-direction: row;
@@ -152,22 +153,18 @@ export default {
 /* MOBILE */
 .mobile{
   .carousel{
-    height: $carousel-mobile-height;
-    min-width: $carousel-mobile-width;
-    width: $carousel-mobile-width;
-    max-width: $carousel-mobile-width;
+    height: 560px !important;
+    @include carousel-mobile-width; // mixin
   }
 }
 /* TABLET - LAPTOP - DESKTOP */
 .tablet, .laptop, .desktop{
   .carousel{
-    height: $carousel-tablet-and-up-height;
-    min-width: $carousel-tablet-and-up-width;
-    width: $carousel-tablet-and-up-width;
-    max-width: $carousel-tablet-and-up-width;
+    height: 850px !important;
+    @include carousel-tablet-and-up-width; // mixin
     .carousel-item{
       img{
-        min-height: 768px
+        min-height: 768px // fix title position to bottom
       }
       p{
         position: relative;
