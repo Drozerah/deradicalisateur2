@@ -24,29 +24,10 @@ export default {
 
 <style lang="scss" scoped>
 main{
-  // background-color: orange;
-  margin-top: 50px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  // align-items: center;
-}
-</style>
-
-<style lang="scss">
-main{
-  header{
-    h1{
-      font-size: 25px;
-      color:gray;
-    }
-  }
-  article{
-    .text-content{
-      font-size: 18px;
-    }
-  }
+  align-items: center;
 }
 </style>
