@@ -72,7 +72,7 @@ body {
 main{
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: lime;
+  // background-color: lime;
   header{
     h1{
       font-size: 25px;
