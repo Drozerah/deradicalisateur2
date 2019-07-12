@@ -1,0 +1,34 @@
+// -------------- CAROUSEL ---------------- //
+
+/* MOBILE */
+@mixin carousel-mobile-width{
+    $width: 350px;
+    min-width: $width;
+    width: $width;
+    max-width: $width;   
+}
+
+/* TABLET - LAPTOP - DESKTOP */
+@mixin carousel-tablet-and-up-width{
+    $width: 568px;
+    min-width: $width;
+    width: $width;
+    max-width: $width;  
+}
+
+// -------------- ARTICLE ---------------- //
+
+/* MOBILE */
+@mixin article-mobile-width{
+    $width: 350px;
+    min-width: $width;
+    width: $width;
+    max-width: $width; 
+}
+/* TABLET - LAPTOP - DESKTOP */
+@mixin article-tablet-and-up-width{
+    $width: 658px;
+    min-width: $width;
+    width: $width;
+    max-width: $width;
+}
