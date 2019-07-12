@@ -66,10 +66,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: 333;
 }
-h2{
-  text-align: center;
-}
 .bold{
   font-weight: 700;
+}
+main{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: lime;
+  header{
+    h1{
+      font-size: 25px;
+      color:gray;
+    }
+  }
+  article{
+    .text-content{
+      font-size: 18px;
+    }
+  }
 }
 </style>
