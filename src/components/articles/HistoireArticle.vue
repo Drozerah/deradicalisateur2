@@ -80,9 +80,9 @@ export default {
   // article.mobile, article.tablet, article.laptop, article.desktop{
     .content{
       font-size: 20px;
+      margin-top:40px;
       p{
         &:nth-child(1) {
-          margin-top:40px;
           margin-bottom: 0px;
         }
         &:nth-child(2) {
