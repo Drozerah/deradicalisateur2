@@ -70,7 +70,7 @@ export default {
           100% {transform: rotate(-1deg) translate(-5px, 0px);}
         }
         img{
-          width: 100%;
+          width: 567px;
         }
       }
     }
@@ -81,6 +81,9 @@ export default {
     .content{
       font-size: 20px;
       margin-top:40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       p{
         &:nth-child(1) {
           margin-bottom: 0px;
@@ -91,7 +94,7 @@ export default {
       }
       .img-card{
         img{
-          width: 100%;
+          width: 567px;
         }
         .label{
           margin-bottom: 10px;
