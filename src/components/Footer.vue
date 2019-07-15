@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/_variables.scss";
+@import "@/scss/_variables.scss";
 .editor{
   text-align: center;
 }

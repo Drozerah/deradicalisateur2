@@ -29,8 +29,8 @@
   </article>
 </template>
 <style lang="scss" scoped>
-@import "@/styles/_variables.scss";
-@import "@/styles/_mixins.scss";
+@import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
   /* MOBILE */
   article.mobile{
     padding: 40px 0px 0px 0px;

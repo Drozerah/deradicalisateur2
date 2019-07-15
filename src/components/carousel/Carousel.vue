@@ -110,8 +110,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/_variables.scss";
-@import "@/styles/_mixins.scss";
+@import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
 .carousel-wrapper{
   display: flex;
   flex-direction: row;
@@ -176,7 +176,7 @@ export default {
 </style>
 
 <style lang="scss">
-@import "@/styles/_variables.scss";
+@import "@/scss/_variables.scss";
 /* Carousel indicators */
 .carousel{
   ul{
