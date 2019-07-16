@@ -98,6 +98,12 @@ article{
       padding: 10px;
       width: 504px;
       display:inherit;
+      img{
+        filter: grayscale(50%);
+        &:hover{
+          filter: grayscale(0%);
+        }
+      }
     }
     p.question{
       font-weight: 700;
