@@ -66,25 +66,38 @@ export default {
 article.mobile{
   .content{
     @include article-mobile-width; // mixin
+    .img-card:nth-child(1){
+      width: 350px;
+    }
+    .img-card:nth-child(14){
+      width: 350px;
+      margin: 25px 0px 25px 0px;
+    }
   }
 }
 /* TABLET - LAPTOP - DESKTOP */
 article.tablet, article.laptop, article.desktop{
   @include article-tablet-and-up-width; // mixin
-  // text-align: justify;
+  .content{
+    .img-card:nth-child(1){
+      width: 380px;
+    }
+    .img-card:nth-child(14) { // authors img
+      width: 500px;
+      margin: 0px 0px 25px 0px;
+    }
+  }
 }
 /* MOBILE - TABLET - LAPTOP - DESKTOP */
 article{
-// article.mobile, article.tablet, article.laptop, article.desktop{
   .content{
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    margin-top:60px;
+    margin-top: 60px;
     .img-card:nth-child(1){
       align-self: center;
-      width: 378px;
-      min-height: 336px;
+      min-height: 340px;
       padding: 15px 10px 10px 10px;
       margin-bottom: 30px;
       .label{
@@ -93,11 +106,9 @@ article{
       }
     }
     .img-card:nth-child(14) { // authors img
-      margin: 0px 0px 25px 0px;
       align-self: center;
-      padding: 10px;
-      width: 504px;
       display:inherit;
+      padding: 10px;
       img{
         filter: grayscale(50%);
         &:hover{
@@ -113,5 +124,4 @@ article{
     }
   }
 }
-
 </style>
