@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Histoire from './views/Histoire.vue'
 import Extraits from './views/Extraits.vue'
 import Entrevue from './views/Entrevue.vue'
+import Actu from './views/Actualites.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,15 @@ const router = new Router({
       path: '/entrevue',
       name: 'entrevue',
       component: Entrevue,
+      meta: {
+        requiresAuth: false,
+        isPublicLink: true
+      }
+    },
+    {
+      path: '/actualites',
+      name: 'actu',
+      component: Actu,
       meta: {
         requiresAuth: false,
         isPublicLink: true
