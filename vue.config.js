@@ -15,4 +15,17 @@ module.exports = {
       })
     ]
   }
+  // ,
+  // chainWebpack: config => {
+  //   config.module // remove hash in .jpeg files names
+  //   .rule('images')
+  //   .test(/\.(jpe?g)(\?.*)?$/)
+  //   .use('url-loader')
+  //   .loader('file-loader')
+  //   .tap(options => {
+  //     // modify the options...
+  //     options.name = 'img/[name].[ext]' // default is => 'img/[name].[hash:8].[ext]'
+  //     return options
+  //   })
+  // }
 }
