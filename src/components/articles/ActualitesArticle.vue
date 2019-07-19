@@ -77,9 +77,13 @@ article{
       .img-card{
         align-self: center;
         padding: 10px;
-        margin: 20px 0px;
+        margin: 30px 0px 0px 0px;
         display: inherit;
         width: 500px;
+        a{
+          display: inherit;
+          padding: 0px;
+        }
       }
       p{
         margin:0px;
