@@ -3,10 +3,9 @@
     <header>
       <h1>{{title}}</h1>
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat suscipit vero autem alias facilis mollitia nostrum tempora sapiente consequuntur veritatis?</p>
         <Spinner v-if="spinner"/>
         <div v-else v-html="result">
-        </div>
+      </div>
       </div>
     </header>
   </article>
@@ -37,10 +36,9 @@ export default {
         .then(
           data => {
             console.log(data)
-            setTimeout(() => {
-              this.spinner = false
-              this.result = data
-            }, 3000)
+            // setTimeout(() => {}, 3000)
+            this.spinner = false
+            this.result = data
           }
         )
         .catch(error => console.error(error))
